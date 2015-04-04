@@ -1,0 +1,23 @@
+{
+  "name": "jadual",
+  "version": "0.1.0",
+  "description": "Simple scheduling library.",
+  "main": "jadual.js",
+  "scripts": {
+    "test": "node_modules/.bin/jasmine-node --matchAll tests/jadual_tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/colinbate/jadual"
+  },
+  "keywords": [
+    "schedule",
+    "recur",
+    "recurrence"
+  ],
+  "author": "Colin Bate <colin@colinbate.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-node": "^2.0.0"
+  }
+}
