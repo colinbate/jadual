@@ -23,4 +23,16 @@ describe('jadual API', function () {
       ]})).toBe(true);
     });
   });
+  describe('humanize()', function () {
+    it('returns an empty string when there is no schedule', function () {
+      expect(jadual.humanize({})).toBe('');
+    });
+    it('returns an invalid schedule string when the start is after the end date', function () {
+      var invalidSchedule = {
+        start: '2015-09-27T23:00:00',
+        end: '2015-05-09T12:30:00'
+      };
+      expect(jadual.humanize(invalidSchedule)).toBe('Invalid schedule');
+    });
+  })
 });
